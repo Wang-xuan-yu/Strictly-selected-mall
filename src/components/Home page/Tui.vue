@@ -59,7 +59,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       li {
-        margin-left: 10px;
+        margin-left: 20px;
         img {
           width: 160px;
           height: 200px;
