@@ -6,7 +6,7 @@ import Cart from "@/views/home/cart";
 import Me from "@/views/home/me";
 
 import Search from '@/components/search/search'
-
+import Fenlxq from "@/components/search/fenlxq"
 export default [
     {
         path: "/",
@@ -53,4 +53,12 @@ export default [
             title: "严选商城-搜索"
         }
     },
+    {
+        path: "/Fenlxq/:id",
+        name: "Fenlxq",
+        component: Fenlxq,
+        meta: {
+          title: "严选商城-分类详情"
+        }
+      },
 ];

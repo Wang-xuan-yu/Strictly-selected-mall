@@ -106,6 +106,7 @@ export default {
       text-align: center;
       text-overflow: ellipsis;
         white-space: nowrap;
+        overflow: hidden;
     }
   }
 }
