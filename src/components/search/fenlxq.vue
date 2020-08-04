@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Goods from "@/components/search/goods";
+import Goods from "@/components/details/goods";
 export default {
   name: "",
   mounted() {

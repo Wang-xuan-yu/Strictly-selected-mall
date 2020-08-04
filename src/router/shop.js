@@ -7,6 +7,10 @@ import Me from "@/views/home/me";
 
 import Search from '@/components/search/search'
 import Fenlxq from "@/components/search/fenlxq"
+import GoodsInfo from "@/components/details/goodsInfo"
+
+import Login from "@/views/login/login";
+
 export default [
     {
         path: "/",
@@ -61,4 +65,21 @@ export default [
           title: "严选商城-分类详情"
         }
       },
+      {
+        path: "/goodsInfo/:id",
+        name: "GoodsInfo",
+        component: GoodsInfo,
+        meta: {
+          title: "严选商城-商品详情页面"
+        }
+      },
+      {
+    path: "/shop/login",
+    name: "shop_login",
+    component: Login,
+
+    meta: {
+      title: "严选商城-登陆"
+    }
+  },
 ];

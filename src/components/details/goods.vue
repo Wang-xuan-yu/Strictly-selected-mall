@@ -1,13 +1,13 @@
 <template>
   <div class="lists">
     <div class="goods-item">
-      <router-link tag="div" class="g-item" v-for="(item,index) in goodsList" :key="index" :to="'/goods/info/'+item.id">
+      <router-link tag="div" class="g-item" v-for="(item,index) in goodsList" :key="index" :to="'/goodsInfo/'+item.id">
         <img :src="item.pic" />
         <p v-html="item.name"></p>
         <p>￥ {{item.originalPrice}}</p>
       </router-link>
       <!-- <div class="g-item" v-for="(item,index) in goodsList" :key="index"></div> -->
-    </div>
+    </div> 
   </div>
 </template>
 

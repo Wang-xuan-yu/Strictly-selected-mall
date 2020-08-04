@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Goods from "@/components/search/goods";
+import Goods from "@/components/details/goods";
 
 //导入本地存储
 import storage from "@/utils/storage";
