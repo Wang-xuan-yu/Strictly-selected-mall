@@ -55,6 +55,7 @@ export default {
     box-sizing: border-box;
     img {
       width: 100% !important;
+      height: 2rem !important;
     }
   }
 }

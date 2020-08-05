@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="boxg">
     <GoodsDetail
       :banners = "banners"
       :content = "content"
@@ -158,7 +158,7 @@ export default {
     },
     //加入购物车
     addCart() {
-      let data = localStorage.getItem("09A_user");
+      let data = localStorage.getItem("09C_user");
       //用户未登录，跳转到登录页面
       if (data == null) {
         this.$toast.fail("请先登录");
@@ -207,7 +207,7 @@ export default {
 </script>
 
 <style lang="scss">
-.box {
+.boxg {
   width: 100%;
   background: #f0f0f0;
   padding-bottom: 0.88rem;

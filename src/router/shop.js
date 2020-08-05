@@ -11,6 +11,9 @@ import GoodsInfo from "@/components/details/goodsInfo"
 
 import Login from "@/views/login/login";
 
+import Special from "@/views/article/special";
+import articleDetail from "@/views/article/detail";
+
 export default [
     {
         path: "/",
@@ -80,6 +83,22 @@ export default [
 
     meta: {
       title: "严选商城-登陆"
+    }
+  },
+  {
+    path: "/special",
+    name: "Special",
+    component: Special,
+    meta: {
+      title: "严选商城-严选专栏"
+    }
+  },
+  {
+    path: "/detail/:id",
+    name: "article",
+    component: articleDetail,
+    meta: {
+      title: "严选商城-文章详情"
     }
   },
 ];
