@@ -11,8 +11,8 @@
       </van-card>
     </div>
 
-    <van-submit-bar class="btt" :price="totalAmounts" button-text="提交订单" @submit="submitOrder">
-      <van-checkbox v-model="checked">全选</van-checkbox>
+    <van-submit-bar class="btt" :price="totalAmounts" button-text="提交订单">
+      <input type="checkbox" v-model="checked" @change="checkall" />全选
     </van-submit-bar>
   </div>
 </template>
@@ -65,18 +65,11 @@ export default {
     goBack(){
       this.$router.go(-1);
     },
-    //提交订单的数据
-    submitOrder(){
-      this.$toast.loading({
-        duration: 3000, // 持续展示 toast
-        message:"商品准备中",
-        overlay: true,
-      });
-      //获取订单的数据信息
-      this.$store.commit("setOrderList");
-      setTimeout(()=>{
-        this.$router.push("/order/confirm");
-      },3000)
+    checkall(e){
+      console.log(e)
+      this.cartList.forEach(item=>{
+        item.checked=e.target.checked
+      })
     }
   }
 };
